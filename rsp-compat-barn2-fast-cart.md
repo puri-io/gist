@@ -4,7 +4,7 @@
 
 
 If you are using the Checkout feature in Fast Cart, then you should add the following CSS to your site. 
-The CSS snippet will prevent a second reservation countdown from displaying withing the fast checkout.
+The CSS snippet will prevent a second reservation countdown from displaying with in the Fast Checkout.
 
 ``` css
 .wfc-checkout .rsp-countdown-wrapper {
