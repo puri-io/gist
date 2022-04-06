@@ -1,4 +1,4 @@
-# WooCommerce Product Bundles - Remove item if missing
+# WooCommerce Product Bundles - Remove bundle if item missing
 
 ``` php
 
