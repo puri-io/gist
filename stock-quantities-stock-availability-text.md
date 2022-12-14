@@ -22,19 +22,19 @@ function puri_example_display_stock_availability( $availability, $product ) {
 
 	if ( $product->is_in_stock() && ! empty( $all_stock ) && ! empty( $multiplier ) ) {
 
-		$stock_available_stock_with_multiplier = intval( $all_stock / $multiplier );
+		$available_stock_with_multiplier = intval( $all_stock / $multiplier );
 
-		if ( empty( $stock_available_stock_with_multiplier ) ) {
+		if ( empty( $available_stock_with_multiplier ) ) {
 			$availability['class'] = 'out-of-stock';
-			$availability['availability'] = 'Not enough available'; // CHANGE THE TEXT.
+			$availability['availability'] = 'Not enough available'; // CHANGE THE TEXT HERE.
 		} else {
-			$availability['availability'] = $stock_available_stock_with_multiplier . ' available'; // CHANGE THE NEXT HERE.
+			$availability['availability'] = $available_stock_with_multiplier . ' available'; // CHANGE THE TEXT HERE.
 		}
 	}
 
 	return $availability;
 }
 
-add_filter( 'woocommerce_get_availability', 'puri_example_display_stock_availability', 1, 2 );
+add_filter( 'woocommerce_get_availability', 'puri_example_display_stock_availability', 20, 2 );
 
 ```
